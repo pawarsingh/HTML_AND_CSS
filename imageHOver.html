@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .main{
+        position: relative;
+        width: 200px;
+        height: 300px;
+       }
+       .main img{
+        width: 100%;
+        /* display: block; */
+        height: 100%;
+       }
+    .overlay{
+        position: absolute;
+        bottom: 0px;
+        height: 0px;
+        overflow: hidden;
+        transition: all 0.5s ease;
+        color: white;
+        background-color: rgba(179, 143, 212,0.2);
+        padding: 10px;
+    }
+    .main:hover .overlay{
+        height: 100%;
+    }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <img src="./images/mytree.jpg" alt="" >
+        <div class="overlay">
+            <h1>arti </h1>
+            <p>arti Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae tempore tempora exercitationem sapiente hic consequatur! Voluptas culpa qui reprehenderit. Dolores vero eligendi ut!</p>
+        </div>
+    </div>
+</body>
+</html>
